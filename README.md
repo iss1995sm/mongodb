@@ -6,14 +6,14 @@ https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubunt
 https://www.digitalocean.com/community/tutorials/how-to-use-mongodb-compass
 
 
-
 # Comandos de mongodb
-- $ mongo
+- $ mongo || - $ mongosh (en versión 5.0.6)
 - $ show dbs
-- $ use 'nombreDeDb'
+- $ use 'nombreDeDB'
 - $ show collections
-- $ mongod
-- $ mongod
+- $ db.'nombreDecoleccion'.find()
+
+
 
 # Instalar pymongo
 pip3 install pymongo
