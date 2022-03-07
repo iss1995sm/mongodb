@@ -35,3 +35,8 @@ collection.insert_one({"_id": ObjectId,
                         "password": psw,
                         "Dirección": direccion})
 
+
+cliente_uno = {'Nombre': 'nombre1'}
+cliente_dos = {'Nombre': 'nombre2'}
+
+collection.insert_many([cliente_uno, cliente_dos])

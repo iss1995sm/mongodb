@@ -1,6 +1,3 @@
-# Recursos http://gpd.sip.ucm.es/rafa/docencia/nosql/IntroPython.html
-
-
 import pymongo
 from pymongo import MongoClient
 import json
@@ -20,4 +17,8 @@ db = client['Nosql_Anuncios']
 collection = db['Nosql_Clients']
 
 
-collection.update_one({"nombre": "uno"}, {'$set':{"email": "Otro email"}})
+collection.update_one({'Nombre': 'uno'}, {'$set': {'Nombre':'tres'}})
+
+
+count = collection.count_documents({})
+print(count)
