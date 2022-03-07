@@ -29,17 +29,17 @@ pip3 install pymongo
 
 
 # Actualizar MongoDB a 5.0.6
-- $ curl -fsSL https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+- curl -fsSL https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
 
-- $ apt-key list
+- apt-key list
 
-- $ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+- echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
 
-- $ sudo apt update
+- sudo apt update
 
-- $ sudo apt install mongodb-org
+- sudo apt install mongodb-org
 
-- $ mongo --version
+- mongo --version
 
-- $ sudo systemctl start mongod.service
+- sudo systemctl start mongod.service
 
